@@ -24,7 +24,6 @@ int setgolf(golf &g)
         cin.get();
         return 1;
     }
-
 }
 void handicap(golf & g, int hc)
 {

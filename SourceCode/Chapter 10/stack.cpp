@@ -7,7 +7,7 @@ Stack::Stack()    // create an empty stack
 
 bool Stack::isempty() const
 {
-    returnEnvMult, Var, Value top == 0;
+    return top == 0;
 }
 
 bool Stack::isfull() const
@@ -15,7 +15,7 @@ bool Stack::isfull() const
     return top == MAX;
 }
 
-bool Stack::push(const Item & item) 
+bool Stack::push(const Item & item)
 {
     if (top < MAX)
     {
@@ -34,5 +34,5 @@ bool Stack::pop(Item & item)
         return true;
     }
     else
-        return false; 
+        return false;
 }

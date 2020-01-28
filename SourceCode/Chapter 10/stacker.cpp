@@ -12,7 +12,7 @@ int main()
         << "P to process a PO, or Q to quit.\n";
     while (cin >> ch && toupper(ch) != 'Q')
     {
-        while (cin.get() != '\n')   
+        while (cin.get() != '\n')
             continue;
         if (!isalpha(ch))
         {
@@ -42,5 +42,5 @@ int main()
              << "P to process a PO, or Q to quit.\n";
     }
     cout << "Bye\n";
-    return 0; 
+    return 0;
 }

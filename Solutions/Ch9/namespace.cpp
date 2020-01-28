@@ -26,7 +26,6 @@ namespace SALES
             s.min = std::min(s.min, s.sales[i]);
             s.max = std::max(s.max, s.sales[i]);
         }
-
         s.average = sum / QUARTERS;
     }
 
