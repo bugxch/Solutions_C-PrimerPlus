@@ -19,5 +19,5 @@ int main()
     cout << "Aida * 1.17: " << temp << endl;
     cout << "10.0 * Tosca: " << 10.0 * tosca << endl;
 	// std::cin.get();
-    return 0; 
+    return 0;
 }
