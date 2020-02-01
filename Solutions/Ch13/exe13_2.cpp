@@ -14,7 +14,7 @@ public:
     Cd(const char * s1,const char * s2, int n, double x);
     Cd(const Cd &d);
     Cd();
-    virtual ~Cd() {delete [] performer; delete [] label;};
+    virtual ~Cd() { delete [] performer; delete [] label;};
     virtual void Report() const;
     Cd & operator=(const Cd &d);
 };
@@ -27,9 +27,9 @@ public:
     Classic(const char* w, const char * s1, const char * s2, int n, double x);
     Classic(const Classic & c);
     Classic();
-    virtual void Report() const;
+    void Report() const;
     Classic & operator=(const Classic &c);
-    ~Classic();
+    virtual ~Classic(){ delete [] work;};
 };
 
 Cd::Cd(const char * s1, const char * s2, int n, double x)
@@ -87,11 +87,6 @@ Cd & Cd::operator=(const Cd & d)
     playtime = d.playtime;
 
     return *this;
-}
-
-Classic::~Classic()
-{
-    delete [] work;
 }
 
 Classic::Classic()
